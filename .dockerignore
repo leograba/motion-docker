@@ -1,0 +1,4 @@
+compose
+dockerfile
+build.sh
+.dockerignore
