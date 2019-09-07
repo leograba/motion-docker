@@ -1,0 +1,8 @@
+version: '3.7'
+services:
+  system-control:
+    image: leograba/motion:latest
+    ports:
+      - "8081:8081"
+    devices:
+      - "${CAMERA}:/dev/video0"
