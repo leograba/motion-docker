@@ -21,6 +21,15 @@ cd motion-docker
 ./run.sh
 ```
 
+If you don't have `git` but have `wget` and `unzip`:
+
+```
+wget https://github.com/leograba/motion-docker/archive/master.zip
+unzip master.zip && rm master.zip
+cd motion-docker-master
+./run.sh
+```
+
 It is built for the following architectures:
 
 - x86_64
