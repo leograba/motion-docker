@@ -1,9 +1,0 @@
-version: '3.7'
-services:
-  motion:
-    build:
-      # This is relative to compose directory in the current project
-      context: ..
-      # This is relative to the context directory in the current project
-      dockerfile: dockerfile/armv7l.Dockerfile
-    image: leograba/motion:latest-arm32v7

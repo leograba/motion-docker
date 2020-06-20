@@ -1,6 +1,6 @@
 # Motion Docker Image #
 
-This is a Docker image based on `Debian:stable-slim` that has
+This is a Docker image based on `debian:stable-slim` that has
 [Motion](https://motion-project.github.io/) - a highly configurable program
 that monitors video signals from many types of cameras.
 
@@ -8,17 +8,17 @@ that monitors video signals from many types of cameras.
 
 For out-of-the-box usage, run:
 
-- `docker run --rm -d --name motion --device /dev/video0:/dev/video0 -p 8081:8081 leograba/motion:latest`
-- `docker run --rm -d --name motion --device /dev/video0:/dev/video0 -p 8081:8081 leograba/motion:latest-arm64v8`
-- `docker run --rm -d --name motion --device /dev/video0:/dev/video0 -p 8081:8081 leograba/motion:latest-arm32v7`
+```
+docker run --rm -d --name motion --device /dev/video0:/dev/video0 -p 8081:8081 leograba/motion:latest
+```
 
-You can use the docker-compose files and `run.sh` script to auto detect your
-architecture and bring-up the Docker container:
+You can use the sample `docker-compose.yml` as well, but you must create or
+download the file first:
 
 ```
 git clone https://github.com/leograba/motion-docker.git
 cd motion-docker
-./run.sh
+docker-compose up
 ```
 
 If you don't have `git` but have `wget` and `unzip`:
@@ -27,7 +27,7 @@ If you don't have `git` but have `wget` and `unzip`:
 wget https://github.com/leograba/motion-docker/archive/master.zip
 unzip master.zip && rm master.zip
 cd motion-docker-master
-./run.sh
+docker-compose up
 ```
 
 It is built for the following architectures:

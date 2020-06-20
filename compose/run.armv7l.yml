@@ -1,8 +1,0 @@
-version: '3.7'
-services:
-  motion:
-    image: leograba/motion:latest-arm32v7
-    ports:
-      - "8081:8081"
-    devices:
-      - "${CAMERA}:/dev/video0"

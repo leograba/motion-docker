@@ -1,4 +1,5 @@
-FROM arm32v7/debian:stable-slim
+ARG ARCH=
+FROM ${ARCH}debian:stable-slim
 
 RUN  apt-get -y update && apt-get install -y --no-install-recommends \
 	motion \

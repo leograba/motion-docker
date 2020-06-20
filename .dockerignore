@@ -1,4 +1,4 @@
-compose
-dockerfile
+docker-compose*yml
+Dockerfile
 build.sh
 .dockerignore

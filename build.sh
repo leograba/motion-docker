@@ -1,12 +1,6 @@
 #!/bin/bash
 
-DOCKER_COMPOSE_DIR=./compose
-cd $DOCKER_COMPOSE_DIR
+IMAGE_BASE=leograba/motion:latest
+PLATFORMS="linux/arm/v7,linux/arm64/v8,linux/amd64"
 
-for fname in $(ls build.*.yml)
-do
-    # Build for all arch
-    docker-compose -f $fname build --pull
-    # Push for all arch
-    docker-compose -f $fname push
-done
+docker buildx build --push --platform ${PLATFORMS} --tag ${IMAGE_BASE} .
