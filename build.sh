@@ -6,7 +6,7 @@ cd $DOCKER_COMPOSE_DIR
 for fname in $(ls build.*.yml)
 do
     # Build for all arch
-    docker-compose -f $fname build
+    docker-compose -f $fname build --pull
     # Push for all arch
     docker-compose -f $fname push
 done
