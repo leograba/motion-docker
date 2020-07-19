@@ -1,3 +1,5 @@
+![build](https://github.com/leograba/motion-docker/workflows/Build%20motion/badge.svg)
+
 # Motion Docker Image #
 
 This is a Docker image based on `debian:stable-slim` that has
