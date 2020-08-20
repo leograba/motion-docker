@@ -1,4 +1,7 @@
-![build](https://github.com/leograba/motion-docker/workflows/Build%20motion/badge.svg)
+![Docker Build Status](https://github.com/leograba/motion-docker/workflows/Build%20motion/badge.svg)
+![Docker Image Size (tag)](https://img.shields.io/docker/image-size/leograba/motion/latest)
+![Docker Image Version (tag latest semver)](https://img.shields.io/docker/v/_/debian/stable-20200803-slim?label=Debian%20base%20container)
+![Motion Version](https://img.shields.io/badge/Motion-4.1.1--1.1%2Bb2-blue)
 
 # Motion Docker Image #
 
