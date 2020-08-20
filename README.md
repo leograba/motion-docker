@@ -11,11 +11,15 @@ that monitors video signals from many types of cameras.
 
 ## How to Use ##
 
-For out-of-the-box usage, run:
+To bring-up the container, run:
 
 ```
 docker run --rm -d --name motion --device /dev/video0:/dev/video0 -p 8081:8081 leograba/motion:latest
 ```
+
+Open a web browser on [localhost:8081](localhost:8081), you will see your camera stream with low resolution and low fps. This is the default motion config.
+
+### Alternative: docker-compose ###
 
 You can use the sample `docker-compose.yml` as well, but you must create or
 download the file first:
@@ -34,6 +38,8 @@ unzip master.zip && rm master.zip
 cd motion-docker-master
 docker-compose up
 ```
+
+## Supported Arch ##
 
 It is built for the following architectures:
 
