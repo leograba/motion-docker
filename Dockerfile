@@ -1,5 +1,6 @@
 ARG ARCH=
-FROM ${ARCH}debian:stable-20200803-slim
+ARG TAG=stable-20200803-slim
+FROM ${ARCH}debian:${TAG}
 
 RUN  apt-get -y update && apt-get install -y --no-install-recommends \
 	motion \
