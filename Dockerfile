@@ -1,5 +1,5 @@
 ARG ARCH=
-ARG TAG=stable-20200908-slim
+ARG TAG=stable-20210111-slim
 FROM ${ARCH}debian:${TAG}
 
 RUN  apt-get -y update && apt-get install -y --no-install-recommends \
