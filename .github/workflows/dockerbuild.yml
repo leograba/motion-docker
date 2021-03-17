@@ -10,9 +10,14 @@ jobs:
     steps:
       - name: checkout code
         uses: actions/checkout@v2
-      - name: install buildx
+      # https://github.com/docker/setup-qemu-action
+      - name: Set up QEMU
+        id: qemu
+        uses: docker/setup-qemu-action@v1
+      # https://github.com/docker/setup-buildx-action
+      - name: Set up Docker Buildx
         id: buildx
-        uses: crazy-max/ghaction-docker-buildx@v1
+        uses: docker/setup-buildx-action@v1
         with:
           version: latest
       - name: login to docker hub
