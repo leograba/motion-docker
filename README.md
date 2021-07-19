@@ -3,7 +3,13 @@
 ![Docker Image Version (tag latest semver)](https://img.shields.io/docker/v/_/debian/stable-20210511-slim?label=Debian%20base%20container)
 ![Motion Version](https://img.shields.io/badge/Motion-4.1.1--1.1%2Bb2-blue)
 
-# Motion Docker Image #
+# DEPRECATED #
+
+There are other options for running Motion on Docker containers out there.
+There are even containers for MotionEye, with the nice front-end, for example
+from the official repository: https://github.com/ccrisan/motioneye/wiki/Install-In-Docker
+
+---
 
 This is a Docker image based on `debian:stable-slim` that has
 [Motion](https://motion-project.github.io/) - a highly configurable program
